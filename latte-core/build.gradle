@@ -1,0 +1,116 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+
+
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    // android support包
+    // noinspection GradleDependency
+    api 'com.android.support.constraint:constraint-layout:1.1.0'
+    api 'com.android.support:appcompat-v7:27.1.1'
+    api 'com.android.support:support-v4:27.1.1'
+    api 'com.android.support:design:27.1.1'
+    //网络请求依赖
+    //noinspection GradleDependency
+    api 'com.squareup.okio:okio:1.13.0'
+    api 'com.squareup.okhttp3:okhttp:3.8.1'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    // Loader依赖
+    api 'com.wang.avi:library:2.1.3'
+    // JSON依赖Android版
+    // noinspection GradleDependency
+    api 'com.alibaba:fastjson:1.1.67.android'
+    // Log
+    api 'com.orhanobut:logger:2.1.1'
+    // 数据库依赖
+    api 'org.greenrobot:greendao-generator:3.2.2'
+    api 'org.greenrobot:greendao:3.2.2'
+    // 微信依赖（包含统计）
+    //noinspection GradleDependency
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.3.4'
+    // 工具包
+    api 'com.blankj:utilcode:1.7.1'
+    // 二维码扫描
+    api 'me.dm7.barcodescanner:zbar:1.9.3'
+    // 字体图标
+    api 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+    api 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    // Fragment依赖
+    // noinspection GradleDependency
+    api 'me.yokeyword:fragmentation:1.0.3'
+    // 边缘上滑动回到上一个fragment的类库
+    // noinspection GradleDependency
+    api 'me.yokeyword:fragmentation-swipeback:1.0.3'
+    //
+    // noinspection GradleDependency
+    api 'com.jakewharton:butterknife:8.5.1'
+    // noinspection GradleDependency
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    // Banner依赖 ：优秀的轮播图
+    //
+    // noinspection GradleDependency
+    api 'com.bigkoo:convenientbanner:2.0.5'
+    api 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    // Log
+    api 'com.orhanobut:logger:2.1.1'
+    // 数据库依赖
+    api 'org.greenrobot:greendao-generator:3.2.2'
+    api 'org.greenrobot:greendao:3.2.2'
+    // wechat依赖 包含统计
+    // noinspection GradleDynamicVersion
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    // Recyvlerview依赖
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    // recyclerview 分割线
+    api 'com.choices.divider:RecyclerView_Divider:1.0.0'
+    // glide 图片处理
+    // 注解 代码生成器
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //沉浸式状态栏
+    api 'com.github.niorgai:StatusBarCompat:2.1.4'
+    //Google AutoValue
+    api "com.google.auto.value:auto-value-annotations:1.6.2"
+    annotationProcessor "com.google.auto.value:auto-value:1.6.2"
+    //RxJava
+    api 'io.reactivex.rxjava2:rxjava:2.1.13'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //图片剪裁
+    //noinspection GradleDependency
+    api 'com.github.yalantis:ucrop:2.2.2-native'
+    api "com.github.hotchemi:permissionsdispatcher:3.0.1"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
+    //工具包
+    api 'com.blankj:utilcode:1.14.4'
+
+
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/text_single"
+    android:background="@android:color/white"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    android:textStyle="bold">
+
+</android.support.v7.widget.AppCompatTextView>
